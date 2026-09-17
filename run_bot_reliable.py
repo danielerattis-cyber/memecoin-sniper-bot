@@ -110,10 +110,10 @@ async def run():
     
     # Carica wallet
     import os
-seed_words = os.getenv("SEED_PHRASE", "")
-if not seed_words:
-    print("❌ SEED_PHRASE non trovato in .env")
-    exit(1)
+    seed_words = os.getenv("SEED_PHRASE", "")
+    if not seed_words:
+        print("❌ SEED_PHRASE non trovato in .env")
+        exit(1))
     mnemo = Mnemonic("english")
     seed = mnemo.to_seed(seed_words)
     key_bytes = seed[:32]
