@@ -14,7 +14,7 @@ import aiohttp
 from solana.rpc.async_api import AsyncClient
 from solders.keypair import Keypair
 
-import trader
+import trader_pumpfun as trader
 from config import UserSettings
 
 logger = logging.getLogger("risk_manager")
