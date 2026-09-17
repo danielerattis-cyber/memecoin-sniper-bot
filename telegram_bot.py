@@ -17,7 +17,7 @@ import trader_pumpfun as trader
 from config import AppConfig, SettingsStore
 from risk_manager import Position, PositionManager, monitor_position
 from safety_checks import run_full_check
-from sniper import NewTokenEvent
+from sniper_reliable import TokenEvent as NewTokenEvent
 
 logger = logging.getLogger("telegram_bot")
 
