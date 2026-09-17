@@ -13,7 +13,7 @@ from solders.pubkey import Pubkey
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, ContextTypes
 
-import trader
+import trader_pumpfun as trader
 from config import AppConfig, SettingsStore
 from risk_manager import Position, PositionManager, monitor_position
 from safety_checks import run_full_check
