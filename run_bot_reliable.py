@@ -12,7 +12,7 @@ from solana.rpc.async_api import AsyncClient
 from config import AppConfig, SettingsStore
 from sniper_reliable import ReliablePoolListener, TokenEvent
 from telegram_bot import SniperTelegramBot
-from trader_pumpfun import DirectPumpTrader
+from trader_raydium_direct import RaydiumSwapTrader as DirectPumpTrader
 from solders.keypair import Keypair
 from mnemonic import Mnemonic
 import nacl.signing
