@@ -17,10 +17,10 @@ import base58
 logger = logging.getLogger("trader_raydium")
 
 # Raydium SwapV4 Program
-RAYDIUM_SWAP_V4 = Pubkey("675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8")
-SOL_MINT = Pubkey("So11111111111111111111111111111111111111112")
-TOKEN_PROGRAM = Pubkey("TokenkegQfeZyiNwAJsyFbPVwwQQfq5x5EvFqUtNqt")
-
+import base58
+RAYDIUM_SWAP_V4 = Pubkey(base58.b58decode("675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"))
+SOL_MINT = Pubkey(base58.b58decode("So11111111111111111111111111111111111111112"))
+TOKEN_PROGRAM = Pubkey(base58.b58decode("TokenkegQfeZyiNwAJsyFbPVwwQQfq5x5EvFqUtNqt"))
 class TradeResult:
     def __init__(self, success: bool, txid: str = None, latency_ms: float = 0, error: str = None):
         self.success = success
