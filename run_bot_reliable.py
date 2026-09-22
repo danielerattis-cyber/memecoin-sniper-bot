@@ -79,7 +79,7 @@ async def handle_token_reliable(event: TokenEvent, bot: SniperTelegramBot, trade
         
         # Acquisto Diretto Pump.fun
         logger.info("💰 Tentativo acquisto diretto...")
-        result = await trader.buy_direct_pumpfun(
+        result = await trader.buy_on_raydium(
             session=session,
             keypair=bot.keypair,
             token_mint=event.mint,
